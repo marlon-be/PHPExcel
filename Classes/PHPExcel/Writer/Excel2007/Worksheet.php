@@ -89,7 +89,7 @@ class PHPExcel_Writer_Excel2007_Worksheet extends PHPExcel_Writer_Excel2007_Writ
                 $this->writeProtectedRanges($objWriter, $pSheet);
 
                 // autoFilter
-                $this->writeAutoFilter($objWriter, $pSheet);
+                @$this->writeAutoFilter($objWriter, $pSheet);
 
                 // mergeCells
                 $this->writeMergeCells($objWriter, $pSheet);
